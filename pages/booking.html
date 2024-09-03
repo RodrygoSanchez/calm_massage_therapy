@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>BOOKING</title>
+</head>
+<body class="body__formulario">
+    
+<section class="formulario">
+    <h4>Book your Appointment</h4>
+    <div>
+        <form action="../formulario/form.php" method="POST"> <!-- el metodo POST conecta con BASE DE DATO -->
+             <label for="name">Name:</label>
+            <input type="text" name="name" class="formulario__input">
+        
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" class="formulario__input">
+        
+        
+            <label for="email">Email:</label>
+            <input type="email" name="email" class="formulario__input">
+        
+            <label for="number">Number:</label>
+            <input type="number" name="number" class="formulario__input">
+        
+            <label for="date">Date of Reserve</label>
+            <input type="date" name="date" class="formulario__input">
+        
+             <!-- <label for="datetime">Horary</label>
+             <input type="time" name="datetime" class="formulario__input"> -->
+        
+            <label for="description">Description:</label>
+            <textarea cols="40" rows="10" name="description" class="formulario__input"></textarea>
+        
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</section>
+    
+    <div>
+        <a href="../index.html">Return to Menu</a>
+    </div>
+    
+</body>
+</html>
+
+<!-- <form action="enviar_datos.php" method="post"> <!-- el metodo POSTO conecta con BASE DE DATO -->
+    <!-- <label for="name">Name:</label>
+    <input type="text" name="name">
+
+    <label for="surname">Surname:</label>
+    <input type="text" name="surname">
+
+    <label for="sex">Sex:</label>
+    <input type="radio" name="sex" value="M">M
+    <input type="radio" name="sex" value="F">F 
+    <input type="radio" name="sex" value="NI">No identifica
+
+    <label for="email">Email:</label>
+    <input type="email" name="email">
+
+    <label for="number">Number</label>
+    <input type="number" name="number">
+
+    <label for="date">Date of Reserve</label>
+    <input type="date" name="date">
+
+     <!-- menu desplegable 
+    <label for="massages">Type of Massage:</label>
+    
+    <select name="massages">
+        <option value="relajante">Relajante</option>
+        <option value="fisio">Fisio</option>
+        <option value="linfatico">Linfatico</option>
+    </select>
+
+    <label for="description">description:</label>
+    <textarea cols="40" rows="10" name="description"></textarea>
+
+    <input type="submit" value="Send">
+</form> -->

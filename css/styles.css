@@ -1,0 +1,849 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* REVISAR */
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+   
+}
+
+.contenedor{ /* propiedades colocadas para MOBILE FIRST */
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+}
+   
+
+.box_redes1{
+    background-color: rgb(158, 158, 158);
+    
+}
+
+.box_redes2{
+    width: 100%;
+    text-align: end;
+    
+}
+
+.box_redes2 img{
+    width: 8%;
+    padding: 0.5rem;
+}
+
+
+header{
+     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: start; 
+    padding: 0.5rem;
+    background-color: #636769;}
+    
+
+.menu{
+    list-style: none; /* se le quita el estilo a las vinetas */
+     display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;   /* se usa flex-wrap:nowwrap en 968px  */
+   /*  align-items: center; */   /* utilizado en 968px */
+   /*  text-align: center; */   /* utilizado en 968px */
+    justify-content: center;
+  
+}
+
+.menu li{
+    padding: 1rem; /* 1.5rem en 968px */
+     border: outset;
+    margin: 1rem;
+   
+}
+
+.menu a{
+   
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Prata", serif;
+    color:white;
+    font-size: 2rem; /* 2.1rem en 968px */
+    font-weight: 800; /* a partir de 500 se considera negrita */
+}
+
+.box_logo{  /* caja de la imagen */
+    padding: 1rem;
+    width: 100%; /* Tenia 50% para ser utilizado en escritorio */
+     display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.box_logo img{   /* Caja de la imagen propia mente dicha */               
+    width:70%;  /* se usa con 10% o 5% en escritorio */
+    border-radius: 50%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.aboutme__body{
+    background-color: whitesmoke;
+   margin: 2rem;
+}
+
+.aboutme{
+   text-align: center;
+    width: 100%;
+    
+}
+
+.aboutme img{
+    width: 100%;
+    margin-bottom: 3rem;
+   
+}
+
+.aboutme__return{
+    padding-top: 8rem;
+}
+
+.aboutme__return a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: inset;
+    color: black;
+    padding: 1rem;
+}
+
+.bodycontact{
+    background-color: whitesmoke;
+    background-image: url(../images/Feed_Editable_05@3x-100.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.contact__contenedor{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3rem; 
+   
+}
+
+.boximg__contact{
+    width: 50%;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.boximg__contact img{
+    width: 35%;
+}
+
+.contact__return{
+    padding-top: 8rem;
+}
+
+.contact__return a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: inset;
+    color: black;
+    padding: 1rem;
+}
+
+main{
+    padding: 4rem; /* tenia el 15% utilizado en 968px */
+    background-size: cover;
+    background-position: center;
+    background-color:whitesmoke;
+    background-image: url(../images/IMG-20230612-WA0004\ section.jpg);
+    background-repeat: no-repeat;
+}
+ 
+
+
+.servicio{
+    display: flex;
+    flex-direction: column; /* tenia row, para ser utilizado en 968px */
+    flex-wrap: wrap;      /* tenia nowrap, para ser utilizado en 968px */
+    align-items: stretch; /* justify-content: center; Utilizado en 968px */
+    align-content: flex-end; /* colocado para usar en Mobile FIRTS */
+    
+}
+
+.servicio a{
+    color:rgb(255, 255, 255);
+    text-decoration:none; 
+    padding: 1rem; /* utilizado en 968px */
+    font-size: 2rem; /* tenia 2.5rem  en 968*/
+    /*  font-weight: 600; utilizador solo en 968px */ 
+     /* border: dashed; Utilizado solo en 968px 
+    border-color: bisque;*/
+    font-family: "Prata", serif;
+} 
+
+
+    /* UTILIZADO PARA MOBILE FIRTS */
+    
+@media (max-width:767px){
+    .servicios{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgba(128, 128, 128, 0.418);
+    border-bottom: solid;
+    border-color:rgb(100, 100, 100);}
+    
+    .servicios a{
+        font-family:"Ysabeau SC", sans-serif;
+        font-size: 2.5rem;
+    }
+
+}
+    
+
+.contenedor__typandpri{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgb(230, 228, 228);
+}
+
+.boximg__typandpri{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boximg__typandpri img{
+    width: 100%; /* tenia 60% para ser usado en 968px */
+    padding: 2rem;
+}
+
+.typesandpri__return a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: inset;
+    color: black;
+    padding: 0.5rem;
+}
+
+.body__tratment{
+    background-color: #dadcde;
+}
+
+.contenedor__tratment{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.textotratment{
+    color:black;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    
+   
+   /*  display: flex; ¬¬¬¬¬¬MOBILE FIRTS¬¬¬¬¬¬¬¬¬
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center; */
+}
+
+.textotratment p{
+    font-family: "Ysabeau SC", sans-serif;
+    padding: 1rem;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,rgb(144, 144, 144), rgb(192, 191, 191));
+}
+
+
+.boximg__tratment{
+    width: 100%;
+    padding: 1rem;
+}
+
+
+.boximg__tratment img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.tratment__return a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: inset;
+    color: black;
+    padding: 0.3rem;
+   
+}
+
+.bodymobile{
+    background-color: whitesmoke;
+}
+.mobilemassage{
+    background-image: url(../images/Feed_Editable_02@3x-100.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 12rem;
+}
+
+.mobile__texto {
+   padding: 2rem;
+   font-size: 2rem;
+   font-family: "Ysabeau SC", sans-serif;
+   text-align: center;
+   
+}
+
+.mobilereturn{
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: inset;
+    color: black;
+    padding: 0.5rem;
+}
+
+
+.profesion__contenido{
+ display: flex;
+flex-wrap: wrap-reverse; /* Tenia colocado nowrap para usarlo en 968px (lo modifique para usarlo en MOBILE FIRST) */
+flex-direction: column;    /* Tenia colocado row para usarlo en 968px (lo modifique para usarlo en MOBILE FIRST)   */
+padding: 3rem;
+align-items: center;
+
+}
+
+ .profesion__texto{
+    text-align: start;
+    width: 50%;
+    /* display: block; SE USA EN 968??? */
+    font-size: 1.5rem;
+    font-family:"Sirin Stencil", sans-serif;
+    
+}
+
+.profesion__texto p{
+    background: linear-gradient(to top,rgb(178, 178, 178),white);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.profesion__texto ol li{
+    margin-top: 1rem;
+    font-family: "Ysabeau SC", sans-serif;
+   
+}
+
+.profesionimagen{
+    width: 50%; /* Tenia el 50% (para ser usado en 968px)*/
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.profesionimagen img{
+    width:50%;
+     border-radius: 10px;
+ 
+}
+
+
+.img_sala{
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+    flex-wrap: nowrap;   
+    
+}
+
+.img_sala img{
+    width: 100%;
+    padding: 1rem;    
+}
+
+.box_contacto1{
+    background-color: #a1abaf;
+    display: flex;
+}
+
+.box_contacto{
+    width: 90%; /* tenia el 100% 968px */
+    text-align: center;
+    padding: 1rem;
+    font-size: 1; /* tenia 3 rem en 968px */ 
+    font-family:"Prata", serif;
+    font-weight: 500px;
+}
+
+
+.box_contacto img{
+    width: 35%; /* tenia 15% 968px */
+    padding: 1rem; 
+
+}
+
+footer{
+    background-color: whitesmoke;
+    text-align: center;
+    color: black;
+    padding: 2.5rem; /* tenia 3 rem */
+}
+
+/* ¬¬¬¬¬¬¬¬¬¬¬¬¬ CELULAR ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ */
+
+@media (min-width:250px) and (max-width:525px){
+
+    main{
+        background-size: cover;
+        padding: 1rem;
+    }
+
+    .menu li {
+        border: none;
+    }
+    
+    .menu li a{
+        text-decoration-line: underline;
+    }
+    
+
+    .bodycontact{
+      background-image: none;
+      background-color: #a1abaf;
+    }
+
+    .boximg__contact{
+        background:radial-gradient(white,gray);
+        padding: 4rem;
+        margin: 4rem;
+        border-radius: 5px;
+    }
+
+    .boximg__contact img{
+        width: 50%;
+      
+    }
+
+    .contact__return{
+        padding-bottom: 3rem;
+    }
+
+    .bodymobile{
+        
+        
+        background-color:#cdcfd0 ;
+    }
+
+    .mobilemassage{
+        background-image: none;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .mobile__texto {
+       
+        background: radial-gradient(white,gray);
+        border-radius: 5px;
+        margin-bottom: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+       
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+     }
+
+    .profesion__texto p{
+        background: linear-gradient(to top,rgb(178, 178, 178),red);
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+
+    .profesionimagen{
+        width: 80%;
+    }
+
+    .profesionimagen img{
+        width: 50%;
+    }
+     
+    .img_sala{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .img_sala img{
+        width: 100%;
+    }
+}
+
+
+
+/* ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ TABLETA 768PX ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ */
+
+@media(min-width:768px) and (max-width:991px){
+    .box_redes2 img{
+        width: 7%;
+    }
+
+    header{
+        flex-direction: row-reverse;
+            
+    }
+    .menu{
+        list-style: none; /* se le quita el estilo a las vinetas */
+         display: flex; 
+        flex-direction: row; 
+        flex-wrap: nowrap;   /* se usa flex-wrap:nowwrap en 968px  */
+        align-items: center;   /* utilizado en 968px */
+        text-align: center;    /* utilizado en 968px */
+        justify-content: center; /* tenia center */
+    }
+    
+    .menu li{
+        
+        border: none;
+        
+    }
+
+    .menu a{
+        border-style: outset; /* borde hacia afuera */
+        font-family: "Prata", serif;
+        color:white;
+        font-size: 1.5rem; /* 2.1rem en 968px */
+        font-weight: 700; /* a partir de 500 se considera negrita */
+    }
+
+    .box_logo{  /* caja de la imagen */
+      
+        width: 50%; /* Tenia 50% para ser utilizado en escritorio */
+        
+    }
+    
+    .box_logo img{   /* Caja de la imagen propia mente dicha */               
+        width:45%;  /* se usa con 10% o 5% en escritorio */
+    }
+
+
+    main{
+        padding: 9rem; /* tenia el 15% utilizado en 968px */
+        
+    }
+
+    .bodycontact{
+        padding-top: 10rem;
+    }
+
+    .contact__return{
+        margin-top: 8rem;
+    }
+     
+    .mobilemassage{
+        padding: 15%;
+    }
+    
+    .mobile__texto {
+       padding: 2rem;
+       font-size: 3.5rem;
+      
+       text-align: center;
+       
+    }
+
+    .servicio{
+         background: radial-gradient(rgba(128, 128, 128, 0.673),whitesmoke); 
+        display: flex;
+        flex-direction: column;  /*tenia row, para ser utilizado en 968px */
+        flex-wrap: wrap;       /*tenia nowrap, para ser utilizado en 968px */
+        align-content: center;
+        align-items: stretch;  /*justify-content: center; Utilizado en 968px */
+        animation-delay: 2s;
+       
+    }
+    
+    .servicio a{
+        font-family: "Ysabeau SC", sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+        color: #3e5059;
+    }
+
+    .profesion__contenido{
+       flex-wrap: nowrap; 
+       flex-direction: row; 
+    }
+       
+    .profesionimagen{
+           width: 80%; 
+       }
+    
+    .profesionimagen img{
+        width: 60%;
+    }
+       
+    .img_sala{
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    
+    .img_sala img{
+        width: 100%;
+        
+    }
+
+    .box_contacto p{
+        font-size: 1.5rem;  
+    }
+
+    .tratment__return{
+       margin-top: 1rem;
+    }
+
+    .mobilereturn{
+        margin-top: 2rem;
+    }
+}
+
+
+/* ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ ESCRITORIO 992PX ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ */
+    
+@media(min-width:992px){
+
+    .box_redes2 img{
+        width: 6%;
+    }
+    
+    header{
+        flex-direction: row;
+    }
+
+    .box_logo{  /* caja de la imagen */
+       
+        width: 50%; 
+        
+    }
+    
+    .box_logo img{   /* Caja de la imagen propia mente dicha */               
+        width:50%;  /* se usa con 10% o 5% en escritorio */
+       
+    }
+
+    .menu li{
+        border: none;
+    }
+
+    .menu a{
+        font-size: 2.1rem;
+        font-weight: 300;
+        border-style: outset;
+    }
+
+    .aboutme{
+        width: 100%;
+    }
+    
+    .aboutme img{
+        width: 100%;
+    }
+
+    main{
+        padding: 17.2rem;
+    }
+
+    .boximg__typandpri img{
+        width: 70%; /* tenia 60% para ser usado en 968px */
+        padding: 2rem;
+    }
+
+    .servicio{
+        flex-direction: row; /* tenia row, para ser utilizado en 968px */
+        flex-wrap: nowrap;       /*tenia nowrap, para ser utilizado en 968px */
+        justify-content: center;  /* justify-content: center; Utilizado en 968px */
+    }
+    
+    .servicio a{
+        color:rgb(94, 94, 94); /* rgba(179, 179, 179, 0.703); */
+        text-decoration:none; 
+        padding: 1rem; /* utilizado en 968px */
+        font-size: 2.5rem; /* tenia 2.5rem  en 968*/
+        font-weight: 500; 
+        font-family: "Ysabeau SC", sans-serif;
+        background-color: #dadcde;
+        border-top: solid gray;
+        border-bottom: solid gray;
+       
+    } 
+
+    .profesionimagen img{
+        width:60%;
+    }
+
+    .img_sala{
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        justify-content: center;
+        justify-content: space-evenly;  /*se lo coloque para el diseno de MOBILE FIRST (no estaba en escritorio) */
+    }
+
+    .img_sala img{
+        width: 100%;
+       
+    }
+
+    .contenedor__tratment{
+       display: flex;
+        flex-direction:column ;
+        flex-wrap: nowrap;
+        background-color: rgb(221, 221, 221);
+        
+    }
+    
+    .textotratment{
+        color: black;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    
+    
+    .boximg__tratment{
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    
+    .boximg__tratment img{
+        width: 90%;
+        border-radius: 10px;
+    }
+    
+    .mobilemassage{
+        padding: 20%;
+    }
+    
+    .mobile__texto {
+       padding: 2rem;
+       font-size: 4rem;
+       
+       text-align: center;
+       
+    }
+
+    .bodycontact{
+        padding-top: 10rem;
+    }
+
+    .contact__return{
+        margin-top: 8rem;
+    }
+    
+    
+    .box_contacto p{
+        font-size: 1.5rem;
+    }
+
+}
+
+.body__formulario{
+    background-color: grey;
+}
+.formulario{
+  
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.formulario__input{
+    display: block;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+
+
+
+
+/* .servicio{
+    background-color: #6367696a;
+    animation-delay: 2s;
+    animation-duration: 2.5s
+    flex-direction: row;  tenia row, para ser utilizado en 968px 
+    flex-wrap: wrap;       tenia nowrap, para ser utilizado en 968px
+    align-content: flex-end;
+    justify-content: center; /* justify-content: center; Utilizado en 968px */
+}
+
+/*.servicio a{
+    color:black;
+    font-size: 3rem;  tenia 2.5rem  en 968
+    font-weight: 600; utilizador solo en 968px  
+    font-family: "Ysabeau SC", sans-serif;
+    padding: 5rem;      
+}  */
+
+
+
+
+   /*  clear: both; /* con esta propiedad el footer siempre queda abajo (se utiliza con la propieda float) */
+ 
+
+
+/* display:inline (los elementos en linea solo toman las medidas de derecha a izquierda */
+/* display:inline-block (son  elementos en linea pero mantienen las propiedades en bloque, arriba,abajo, derecha, izquierda */
+
+/* .precios{
+    background-color: rgb(224, 157, 23);
+    padding: 1rem;
+    width: 40%;
+    height: 80vh;
+    float: right;
+} */
+
+/* margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem; */
+
+
+
+
+
+
+    
+    /* 
+    (img_sala)    
+    display: flex;
+    width: 100%;    
+    justify-content: space-between;
+    /*flex-direction: row;  se lo coloque para el diseno de MOBILE FIRST (no estaba en escritorio) */
+    /*flex-wrap: wrap;     se lo coloque para el diseno de MOBILE FIRST (no estaba en escritorio) */
+    /*justify-content: space-evenly;   se lo coloque para el diseno de MOBILE FIRST (no estaba en escritorio) */ 
